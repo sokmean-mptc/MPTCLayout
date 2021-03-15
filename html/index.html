@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="km">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../dist/main.css" rel="stylesheet">
+
+    <title>ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍ | Ministry of Post and Telecomunications</title>
+  </head>
+  <body>
+    <section class="header bg-primary bg-gradient position-relative">
+      <div id="particles-js" class="d-none d-lg-block position-absolute top-0 bottom-0 start-0 end-0"></div>
+      <header class="container d-flex align-items-center justify-content-between py-4 position-relative">
+        <figure class="d-flex align-items-center mb-0">
+          <a href="index.html">
+            <picture class="me-4">
+              <source media="(min-width: 992px)" srcset="./images/logo@4x.png" type="image/jpeg">
+              <source media="(min-width: 768px)" srcset="./images/logo@3x.png" type="image/jpeg">
+              <source media="(min-width: 576px)" srcset="./images/logo@2x.png" type="image/jpeg">
+              <source media="(max-width: 575px)" srcset="./images/logo@1x.png" type="image/jpeg">
+              <img class="" src="./images/logo@1x.png" type="image/jpeg">
+            </picture>
+          </a>
+          <figcaption class="title">
+            <h1 class="site-title color-white">ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍</h1>
+            <div class="tagline color-gray-300">Ministry of Post and Telecomunications</div>
+          </figcaption>
+        </figure>
+        <div class="d-none d-lg-flex">
+          <ul class="list-unstyled mb-0 social">
+            <li class="list-inline-item">
+              <a class="text-decoration-none color-gray-500" href="#"><i class="icofont-telegram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-decoration-none color-gray-500" href="#"><i class="icofont-youtube"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-decoration-none color-gray-500" href="#"><i class="icofont-facebook"></i></a>
+            </li>
+          </ul>
+          <div class="search-icon text-center me-3 color-gray-500" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="icofont-search-1"></i>
+            <div class="caption">ស្វែងរក</div>
+          </div>
+          <div class="dropdown dropdown-language color-gray-500">
+            <div class="dropdown-active d-flex" id="dropdownLanguage" data-bs-toggle="dropdown" aria-expanded="false">
+              <figure class="mb-0 text-center me-1">
+                <img src="./images/km.png" alt="ភាសារខ្មែរ">
+                <figcaption>ខ្មែរ</figcaption>
+              </figure>
+              <div class="align-middle">
+                <i class="icofont-simple-down"></i>
+              </div>
+            </div>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownLanguage">
+              <li>
+                <a class="dropdown-item" href="index.html">
+                  <figure class="mb-0 d-flex align-items-center">
+                    <img class="me-1 lh-1" height="16" src="./images/en.png" alt="English">
+                  <figcaption>English</figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <nav class="container position-relative">
+        <ul class="list-inline py-3">
+          <li class="list-inline-item">
+            <a class="text-decoration-none color-white" href="#">ទំព័រដើម</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-decoration-none color-white" href="#">អំពីក្រសួង</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-decoration-none color-white" href="#">ច្បាប់និងនិតិបញ្ញត្តិ</a>
+          </li>
+        </ul>
+      </nav>
+      
+
+    </section>
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+            <form action="index.html" method="GET">
+              <div class="input-group mb-0">
+                <input name="s" type="search" class="form-control" placeholder="ពាក្យគន្លឺះ" aria-label="ស្វែងរក" aria-describedby="button-search">
+                <button class="btn btn-outline-secondary" type="submit" id="button-search">ស្វែងរក</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Bundle js -->
+    <script src="../dist/main.js"></script>
+
+  </body>
+</html>

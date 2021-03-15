@@ -1,0 +1,47 @@
+header {
+    .title {
+        font-size: 1rem;
+        h1 {
+            font-size: 2.5em;
+        }
+        .tagline {
+            font-size: 0.9em;
+        }
+    }
+    .social {
+        li {
+            margin-right: 0.5rem;
+            a {
+                i {
+                    font-size: 1.35rem;
+                }
+            }
+        }
+    }
+    .search-icon {
+        i {
+            font-size: 1.35rem;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        .caption {
+            font-size: 0.75rem;
+        }
+    }
+    .dropdown-language {
+        .dropdown-active {
+            img {
+                margin-bottom: 0.3rem;
+            }
+            figcaption {
+                font-size: 0.75rem;
+            }
+        }
+        .dropdown-menu {
+            min-width: fit-content;
+            figcaption {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
