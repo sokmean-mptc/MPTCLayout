@@ -1,11 +1,20 @@
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+.header {
+    background: $white;
+}
 header {
     .title {
-        font-size: 1rem;
+        font-size: 0.45rem;
         h1 {
             font-size: 2.5em;
+            margin-bottom: 0rem;
+            color: $gray-900;
         }
         .tagline {
-            font-size: 0.9em;
+            font-size: 1.35em;
+            color: $gray-600;
         }
     }
     .social {
@@ -21,7 +30,6 @@ header {
     .search-icon {
         i {
             font-size: 1.35rem;
-            display: block;
             margin-bottom: 0.3rem;
         }
         .caption {
@@ -38,10 +46,62 @@ header {
             }
         }
         .dropdown-menu {
-            min-width: fit-content;
             figcaption {
                 font-size: 0.75rem;
             }
         }
     }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    header {
+        .title {
+            font-size: 0.5rem;
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 0.2rem;
+            }
+            .tagline {
+                font-size: 1.25em;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    header {
+        .title {
+            font-size: 0.75rem;
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 0.25rem;
+            }
+            .tagline {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .header {
+        background: $gradient;
+    }
+    header {
+        .title {
+            font-size: 1rem;
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 0.6rem;
+                color: $white;
+            }
+            .tagline {
+                font-size: 0.9em;
+                color: $white;
+            }
+        }
+    }
+ }

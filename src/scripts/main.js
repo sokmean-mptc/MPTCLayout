@@ -1,4 +1,5 @@
-import $ from 'jquery'
+// import $ from 'jquery'
 import 'bootstrap'
 import './particles.js'
-$(document).ready(function(){console.log('work!')})
+import './hc-offcanvas-nav'
+// $(document).ready(function(){console.log('work!')})

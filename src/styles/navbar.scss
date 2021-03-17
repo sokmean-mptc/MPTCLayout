@@ -1,0 +1,146 @@
+$menu-link-padding:                 0.75rem;
+$mega-menu-multiLevel-colWidth:     220px;
+
+nav {
+    .menu {
+        font-family: $font-body;
+    }
+}
+.hc-offcanvas-nav .nav-content .level-title {
+    margin: 0;
+}
+.mobile-toggle {
+    .search-icon {
+        color: $gray-300;
+        margin-right: 0;
+    }
+    .toggle-nav {
+        position: initial;
+        ul {
+            margin: 0;
+            padding: 1px 5px;
+            li {
+                display: block;
+                width: 5px;
+                height: 5px;
+                margin-bottom: 3px;
+                border-radius: 2.5px;
+                background-color: $gray-300;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+nav {
+    position: relative;
+    font-size: 1.125rem;
+   ul, li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        &:hover, &:visited {
+            text-decoration: none;
+        }
+    }
+
+
+    .menu {
+        display: flex;
+        > .menu-item {
+            &.menu-item-has-children {
+                > a {
+                    &:after {
+                        content: "\eab2";
+                        font-family: "IcoFont";
+                        margin-left: 0.35rem;
+                    }
+                }
+                &:hover {
+                    > a {
+                        border-color: $white;
+                        &:after {
+                            content: "\eab9";
+                        }
+                    }
+                    > .sub-menu {
+                        display: block;
+                    }
+                }
+            }
+            > a {
+                margin-right: 3rem;
+                color: $white;
+                font-size: 1em;
+                padding-top: 0.65rem;
+                padding-bottom: 0.35rem;
+                border-bottom: 3px solid transparent;
+                &:hover {
+                    border-color: $white;
+                }
+            }
+            &:last-child {
+                > a {
+                    margin-right: 0;
+                }
+            }
+            &.current-menu-ancestor {
+                > a {
+                    border-color: $white;
+                }
+            }
+        }
+    }
+
+    .sub-menu {
+        background-color: $gray-100;
+        display: none;
+        position: absolute;
+        width: $mega-menu-multiLevel-colWidth;
+        .menu-item {
+            position: relative;
+            > a {
+                color: $gray-700;
+                padding: $menu-link-padding;
+                position: relative;
+                z-index: 1; 
+                font-size: 0.85em;
+            }
+            &.menu-item-has-children {
+                > a {
+                    &:after {
+                        content: "\eab8";
+                        font-family: "IcoFont";      
+                        position: absolute;
+                        right: 10px;
+                        top:50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                &:hover {
+                    > .sub-menu {
+                        display: block;
+                        left: 100%;
+                        min-height: 100%;
+                        top: 0;
+                    }
+                }
+            }
+            &.current-menu-ancestor,
+            &.current-menu-item,
+            &:hover {
+                > a {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
+}
