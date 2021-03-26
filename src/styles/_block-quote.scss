@@ -1,0 +1,20 @@
+.block-quote {
+    .avatar {
+        background-color: $gray-200;
+    }
+    .caption {
+        background-color: $gray-200;
+    }
+    .figure {
+        background-color: $gray-100;
+        .thumbnail {
+            img {
+                width: 64px;
+            }
+        }
+        a {
+            color: $gray-700;
+            font-size: 1rem;
+        }
+    }
+}

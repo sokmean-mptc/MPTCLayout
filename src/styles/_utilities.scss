@@ -3,19 +3,42 @@ $utilities: (
     property: color,
     class: color,
     values: (
-        white: $white,
-        gray-100: $gray-100,
-        gray-200: $gray-200,
-        gray-300: $gray-300,
-        gray-400: $gray-400,
-        gray-500: $gray-500,
-        gray-600: $gray-600,
-        gray-700: $gray-700,
-        gray-800: $gray-800,
-        gray-900: $gray-900,
-        black: $black
+      white: $white,
+      gray-100: $gray-100,
+      gray-200: $gray-200,
+      gray-300: $gray-300,
+      gray-400: $gray-400,
+      gray-500: $gray-500,
+      gray-600: $gray-600,
+      gray-700: $gray-700,
+      gray-800: $gray-800,
+      gray-900: $gray-900,
+      black: $black
     )
+  ),
+  "background": (
+    property: background-color,
+    class: bg,
+    values: (
+      white: $white,
+      gray-100: $gray-100,
+      gray-200: $gray-200,
+      gray-300: $gray-300,
+      gray-400: $gray-400,
+      gray-500: $gray-500,
+      gray-600: $gray-600,
+      gray-700: $gray-700,
+      gray-800: $gray-800,
+      gray-900: $gray-900,
+      black: $black
+    )
+  ),
+  "ratio": (
+    property: --bs-aspect-ratio,
+    responsive: true,
+    class: ratio,
+    values: $aspect-ratios
   )
 );
- 
+
 $gradient: linear-gradient(45deg, $secondary, $primary);

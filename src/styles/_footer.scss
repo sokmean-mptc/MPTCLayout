@@ -1,0 +1,104 @@
+footer {
+    .social-nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    color: $gray-600;
+                    font-size: 1rem;
+                    line-height: 1;
+                }
+                > ul {
+                    display: none;
+                }
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    .dropdown-language {
+        font-size: 0.75rem;
+        .dropdown-active {
+            img {
+                height: 17px;
+            }
+        }
+        .dropdown-menu {
+            font-size: 0.9em;
+            img {
+                height: 14px;
+            }
+        }
+    }
+    .footer-nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    color: $gray-600;
+                    font-size: 0.75rem;
+                    line-height: 1;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                > ul {
+                    display: none;
+                }
+                margin-right: 0.75rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .copyright {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+}
+
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {
+    footer {
+        .social-nav {
+            ul {
+                li {
+                    a {
+                        font-size: 1.375rem;
+                    }
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+        .dropdown-language {
+            font-size: 0.75rem;
+            .dropdown-active {
+                img {
+                    height: 24px;
+                }
+            }
+        }
+        .footer-nav {
+            ul {
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .copyright {
+            font-size: 1rem;
+        }
+    }
+}

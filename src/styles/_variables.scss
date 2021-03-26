@@ -1,8 +1,8 @@
-$font-body: "Open Sans", "Koh-Santepheap", sans-serif;
+$font-body: "Open Sans", Helvetica, "Koh-Santepheap", sans-serif;
 $font-family-sans-serif: $font-body;
 
-$primary:       #004f8b;
-$secondary:     #0277BD;
+$primary:       #01589bda;
+$secondary:     #0278bdda;
 
 $white:    #fff;
 $gray-100: #f8f9fa;
@@ -18,3 +18,19 @@ $black:    #000;
 
 $hc-offcanvas-nav-background-color:   $gray-200 !default;
 $hc-offcanvas-nav-text-color:         $gray-900 !default;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+);
+
+$aspect-ratios: (
+    "1x1": 100%,
+    "3x2": calc(2 / 3 * 100%),
+    "3x4": calc(4 / 3 * 100%),
+    "4x3": calc(3 / 4 * 100%),
+    "16x9": calc(9 / 16 * 100%),
+    "21x9": calc(9 / 21 * 100%)
+);

@@ -1,0 +1,140 @@
+.slick-dotted {
+    .slick-arrow {
+        top: calc(50% - 10px);
+    }
+}
+.slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: $white;
+    opacity: 0.5;
+    text-shadow: 0px 1px 1px $gray-800;
+    font-family: "IcoFont";
+    width: auto;
+    &:before {
+        font-size: 4rem;
+    }
+
+}
+.slick-prev {
+    left: 0;
+    &:before {
+        content: "\ea74";
+    }
+}
+.slick-next {
+    right: 0;
+    &:before {
+        content: "\ea75";
+    }
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+    > li {
+        button {
+            border: none;
+            font-size: 0;
+            padding: 0.188rem;
+            border-radius: 50%;
+            margin-right: 0.1rem;
+            background-color: $white;
+            display: inherit;
+            border: 1px solid $primary;
+        }
+        &:last-child {
+            button {
+                margin-right: 0;
+            }
+        }
+        &.slick-active {
+            button {
+                background: $gradient;
+                padding: 0.375rem;
+                border: none;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .slick-dotted {
+        .slick-arrow {
+            top: calc(50% - 14px);
+        }
+    }
+    .slick-dots {
+        > li {
+            button {
+                padding: 0.313rem;
+                margin-right: 0.1rem;
+            }
+            &.slick-active {
+                button {
+                    padding: 0.5rem;
+                }
+            }
+        }
+        margin-top: 0.75rem;
+    }
+}
+@include media-breakpoint-up(md) { 
+    .slick-dotted {
+        .slick-arrow {
+            top: calc(50% - 17px);
+        }
+    }
+    .slick-dots {
+        > li {
+            button {
+                padding: 0.344rem;
+                margin-right: 0.2rem;
+            }
+            &.slick-active {
+                button {
+                    padding: 0.563rem;
+                }
+            }
+        }
+        margin-top: 1rem;
+    }
+}
+@include media-breakpoint-up(lg) { 
+    .slick-dotted {
+        .slick-arrow {
+            top: calc(50% - 22.5px);
+        }
+    }
+    .slick-arrow {
+        &:before {
+            font-size: 6rem;
+        }
+
+    }
+    .slick-dots {
+        > li {
+            button {
+                padding: 0.407rem;
+                margin-right: 0.3rem;
+            }
+            &.slick-active {
+                button {
+                    padding: 0.657rem;
+                }
+            }
+        }
+        margin-top: 1.5rem;
+    }
+}

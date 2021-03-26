@@ -1,0 +1,34 @@
+.block-title {
+    > * {
+        font-size: 1.125rem;
+    }
+    a {
+        color: $gray-800;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .block-title {
+        > * {
+            font-size: 1.25rem;
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    .block-title {
+        > * {
+            font-size: 1.57rem;
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    .block-title {
+        > * {
+            font-size: 1.75rem;
+        }
+    }
+}

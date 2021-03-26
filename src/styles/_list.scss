@@ -1,0 +1,74 @@
+figure {
+    a {
+        outline: none;
+    }
+}
+
+.figcaption {
+    .title {
+        font-size: 0.8rem;
+        a {
+            outline: none;
+            color: $gray-900;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &.double-font-size {
+            font-size: 1rem;
+        }
+    }
+    .excerpt {
+        font-size: 0.8rem;
+        color: $gray-600;
+    }
+}
+
+.bg-gradient {
+    .title {
+        a {
+            color: $white;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {  
+    .figcaption {
+        .title {
+            font-size: 0.85rem;
+            &.double-font-size {
+                font-size: 1.125rem;
+            }
+        }
+        .excerpt {
+            font-size: 0.8rem;
+        }
+    }
+}
+@include media-breakpoint-up(md) {  
+    .figcaption {
+        .title {
+            font-size: 1rem;
+            &.double-font-size {
+                font-size: 1.375rem;
+            }
+        }
+        .excerpt {
+            font-size: 0.85rem;
+        }
+    }
+}
+@include media-breakpoint-up(lg) { 
+    .figcaption {
+        .title {
+            font-size: 1rem;
+            &.double-font-size {
+                font-size: 1.5rem;
+            }
+        }
+        .excerpt {
+            font-size: 0.85rem;
+        }
+    }
+}

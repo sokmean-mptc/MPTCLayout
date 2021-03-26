@@ -1,0 +1,41 @@
+.meta,
+.taxonomies-list {
+    font-size: 0.75rem;
+    a {
+        outline: none;
+        text-decoration:  none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    * {
+        color: $gray-600;
+    }
+}
+.bg-gradient {
+    .meta,
+    .taxonomies-list {
+        * {
+            color: $gray-400;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {  
+    .meta,
+    .taxonomies-list {
+        font-size: 0.8rem;
+    }
+}
+@include media-breakpoint-up(md) {  
+    .meta,
+    .taxonomies-list {
+        font-size: 0.85rem;
+    }
+}
+@include media-breakpoint-up(lg) { 
+    .meta,
+    .taxonomies-list {
+        font-size: 0.85rem;
+    }
+}
