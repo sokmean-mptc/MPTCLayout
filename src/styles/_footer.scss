@@ -4,13 +4,16 @@ footer {
             margin: 0;
             padding: 0;
             list-style: none;
+            display: flex;
             li {
-                display: inline-block;
                 a {
                     text-decoration: none;
                     color: $gray-600;
                     font-size: 1rem;
                     line-height: 1;
+                    i {
+                        display: block;
+                    }
                 }
                 > ul {
                     display: none;
@@ -23,7 +26,8 @@ footer {
         font-size: 0.75rem;
         .dropdown-active {
             img {
-                height: 17px;
+                height: 16px;
+                display: block;
             }
         }
         .dropdown-menu {
