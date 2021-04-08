@@ -1,0 +1,8 @@
+.pagination-link {
+    > * {
+        padding: 5px;
+    }
+    .current {
+        font-weight: bold;
+    }
+}
