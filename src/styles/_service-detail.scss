@@ -1,0 +1,185 @@
+html[lang=km] {
+    .service-detail {
+        ol {
+            list-style-type: khmer;
+        }
+    }
+}
+.service-detail {
+    .list-group {
+        background-color: $gray-100;
+        padding-bottom: 100px;
+        .list-group-item {
+            line-height: initial;
+            margin: initial;
+            border: initial;
+            background: initial;
+            border-bottom: 1px solid $gray-200;
+            color: $primary;
+            font-size: 16px;
+            padding: 15px 15px 15px 30px;
+            border-radius: 0px;
+        }
+        .list-group-item.active {
+            background-color: #ffffff;
+            border-left: 5px solid $primary;
+            padding-left: 25px;
+            border-bottom: initial;
+        }
+        .list-group-item.head {
+            font-weight: bold;
+            color: $primary;
+        }
+    }
+    .list-group.sticky {
+        position: sticky;
+        top: 0px;
+    }
+    .scrollspy-content {
+        font-size: 16px;
+        .list-title {
+            > * {
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+        .list-title.sub {
+            > * {
+                color: $primary;
+            }
+        }
+        ul, ol, dl {
+            padding-left: 20px;
+        }
+        .next-section {
+            border-bottom: 1px solid $gray-200;
+            padding: 10px 0px;
+            margin-bottom: 60px;
+            > * {
+                font-size: 12px;
+                color: $gray-500;
+                font-weight: bold;
+            }
+            a {
+                color: $primary;
+                text-decoration: none;
+            }
+        }
+        .download {
+            border: 1px solid $gray-200;
+            > * {
+                margin: auto;
+                color: $primary;
+                text-align: center;
+            }
+            .label {
+                text-align: left;
+            }
+            .action {
+                font-size: 12px;
+                background-color: $gray-100;
+                i {
+                    font-size: 20px;
+                    color: $primary;
+                }
+            }
+        }
+        .contact {
+            .contact-item {
+                margin-bottom: 30px;
+                i {
+                    font-size: 25px;
+                    margin-right: 10px;
+                    color: $gray-500;
+                }
+                .contact-title {
+                    color: $primary;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .service-detail {
+        .scrollspy-content {
+            .list-title {
+                margin-bottom: 15px;
+                > * {
+                    font-size: 16px;
+                }
+            }
+            .list-title.sub {
+                margin-bottom: 15px;
+                > * {
+                    font-size: 15px;
+                }
+            }
+            ul, ol, dl {
+                line-height: 30px;
+            }
+            .download {
+                margin-bottom: 15px;
+                > * {
+                    padding: 15px 0px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-only(md) {
+    .service-detail {
+        .scrollspy-content {
+            .list-title {
+                margin-bottom: 20px;
+                > * {
+                    font-size: 18px;
+                }
+            }
+            .list-title.sub {
+                margin-bottom: 20px;
+                > * {
+                    font-size: 16px;
+                }
+            }
+            ul, ol, dl {
+                line-height: 30px;
+            }
+            .download {
+                margin-bottom: 20px;
+                > * {
+                    padding: 15px 0px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    .service-detail {
+        .scrollspy-content {
+            .list-title {
+                margin-bottom: 30px;
+                > * {
+                    font-size: 20px;
+                }
+            }
+            .list-title.sub {
+                margin-bottom: 20px;
+                > * {
+                    font-size: 18px;
+                }
+            }
+            ul, ol, dl {
+                line-height: 35px;
+            }
+            .download {
+                margin-bottom: 30px;
+                > * {
+                    padding: 20px 0px;
+                }
+            }
+        }
+    }
+}
