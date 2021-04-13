@@ -1,4 +1,4 @@
-
+import $ from 'jquery'
 let url = location.href.replace(/\/$/, '');
 locationHash(url);
 function locationHash(url){
