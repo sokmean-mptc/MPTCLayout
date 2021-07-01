@@ -1,0 +1,39 @@
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+nav {
+    .menu-header-two {
+        
+        > .menu-item {
+            &.menu-item-has-children {
+                
+                &:hover {
+                    > a {
+                        border-color: $primary;
+                        
+                    }
+                }
+            }
+            > a {
+                
+                color: $gray-800;
+                
+                
+                &:hover {
+                    border-color: $primary;
+                }
+            }
+            
+            &.current-menu-ancestor,
+            &.current-menu-item {
+                > a {
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+
+    
+
+}
+}
