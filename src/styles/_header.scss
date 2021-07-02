@@ -95,7 +95,7 @@ header {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     .header {
-        background: $gradient;
+        background-image: var(--bs-gradient);
     }
     header {
         .title {
