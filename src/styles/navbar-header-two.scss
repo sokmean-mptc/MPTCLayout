@@ -9,7 +9,7 @@ nav {
                 
                 &:hover {
                     > a {
-                        border-color: $primary;
+                        border-color: var(--bs-primary);
                         
                     }
                 }
@@ -20,14 +20,14 @@ nav {
                 
                 
                 &:hover {
-                    border-color: $primary;
+                    border-color: var(--bs-primary);
                 }
             }
             
             &.current-menu-ancestor,
             &.current-menu-item {
                 > a {
-                    border-color: $primary;
+                    border-color: var(--bs-primary);
                 }
             }
         }
