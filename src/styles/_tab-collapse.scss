@@ -1,82 +1,114 @@
 .tab-collapse {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     .nav {
-        background-color: $gray-100;
-        margin-right: 30px;
-        .nav-link {
-            padding: 15px 15px 15px 30px;
-            font-size: 15px;
-            border-bottom: 1px solid $gray-200;
+        display: none;
+    }
+    .tab-content {
+        .tab-pane {
             display: block;
-            white-space: nowrap;
+            opacity: 1;
+            border: 1px solid $gray-200;
+            margin-bottom: 5px;
+            padding: 15px;
+            .collapse-title {
+                margin: -15px;
+                button {
+                    color: $gray-800;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                    background-color: #ffffff;
+                    padding: 15px 15px 15px 10px;
+                    border: 0px;
+                    border-radius: 0px;
+                    border-left: 5px solid var(--bs-primary);
+                    outline: none;
+                    width: 100%;
+                }
+                button.collapsed {
+                    border-left: 0px;
+                    padding: 15px;
+                }
+            }
+            .collapse,
+            .collapsing {
+                .collapse-body {
+                }
+                
+            }
         }
-        .nav-link.title {
-            color: $primary;
-            font-weight: bold;
-            font-size: 16px;
-            width: 100%;
-        }
-        .nav-link.active {
-            background-color: #ffffff;
-            border-left: 5px solid $primary;
-            border-bottom: 0px;
-            padding-left: 25px;
+    }
+    .block-list {
+        article {
+            .title {
+                font-size: 0.9rem;
+                * {
+                    color: $gray-800;
+                    text-decoration: none;
+                }
+            }
+            .excerpt { 
+                font-size: 0.8rem;
+                color: $gray-600;
+            }
         }
     }
 }
 
-
-@include media-breakpoint-down(sm) {
-    .tab-collapse {
-        .nav {
-            display: none;
-        }
-        .tab-content {
-            .tab-pane {
-                display: block;
-                opacity: 1;
-                border: 1px solid $gray-200;
-                margin-bottom: 5px;
-                padding: 15px;
-                .collapse-title {
-                    margin: -15px;
-                    button {
-                        display: block;
-                        text-align: left;
-                        background-color: #ffffff;
-                        padding: 15px 15px 15px 10px;
-                        border: 0px;
-                        border-radius: 0px;
-                        border-left: 5px solid $primary;
-                        outline: none;
-                    }
-                    button.collapsed {
-                        border-left: 0px;
-                        padding: 15px;
-                    }
-                }
-                .collapse,
-                .collapsing {
-                    .collapse-body {
-                        padding-top: 30px;
-
-                    }
-                    
-                }
-            }
-        }
-    }
+@include media-breakpoint-up(sm) { 
+    
 }
 @include media-breakpoint-up(md) {
     .tab-collapse {
+        .nav {
+            display: block;
+            margin-right: 30px;
+            background-color: $gray-200;
+            .nav-link {
+                background-color: $gray-100;
+                padding: 15px 15px 15px 30px;
+                font-size: 15px;
+                display: block;
+                white-space: nowrap;
+                color: $gray-800;
+                margin-bottom: 1px;
+            }
+            .nav-link.title {
+                color: $gray-800;
+                font-weight: bold;
+                font-size: 16px;
+                width: 100%;
+            }
+            .nav-link.active {
+                background-color: #ffffff;
+                border-left: 5px solid var(--bs-primary);
+                border-bottom: 0px;
+                padding-left: 25px;
+            }
+        }
+        margin-bottom: 30px;
         .tab-content {
+            .tab-pane {
+                &.fade {
+                    display: none;
+                }
+                &.active {
+                    display: block;
+                }
+            }
             .collapse-title {
                 display: none;
             }
-            .collapse {
-                display: block;
+        }
+        .block-list {
+            article {
+                .title {
+                    font-size: 1rem;
+                }
+                .excerpt { 
+                    font-size: 0.9rem;
+                }
             }
         }
-        
     }
 }

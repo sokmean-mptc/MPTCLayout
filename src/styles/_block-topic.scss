@@ -1,40 +1,50 @@
-@include media-breakpoint-down(sm) {
-    .block-topic {
-        margin-bottom: 15px;
-        article {
-            text-align: center;
-            figure {
-                margin: 0px;
-                > a {
-                    display: block;
-                    margin-right: 0px;
-                }
-                img {
-                    margin-bottom: 10px;
-                }
-                figcaption {
-                    a {
-                        * {
-                            font-size: 12px;
-                            margin: 0px;
-                        }
-                    }
-                    p {
-                        display: none;
+.block-topic {
+    margin-bottom: 15px;
+    article {
+        text-align: center;
+        figure {
+            margin: 0px;
+            > a {
+                display: block;
+                margin-right: 0px;
+            }
+            img {
+                margin-bottom: 10px;
+                border-radius: 50%;
+                background-image: var(--bs-gradient);
+            }
+            figcaption {
+                a {
+                    color: $gray-800;
+                    text-decoration: none;
+                    * {
+                        font-size: 0.9rem;
                         margin: 0px;
                     }
+                }
+                p {
+                    display: none;
+                    margin: 0px;
                 }
             }
         }
     }
+    tr {
+        display: flex;
+        td {
+            flex: 1;
+        }
+    }
 }
-@include media-breakpoint-only(md) {
+@include media-breakpoint-up(sm) { 
+    
+}
+@include media-breakpoint-up(md) {  
     .block-topic {
         margin-bottom: 20px;
         article {
             text-align: center;
             figure {
-                margin: 0px;
                 > a {
                     display: block;
                     margin-bottom: 10px;
@@ -43,7 +53,7 @@
                 figcaption {
                     a {
                         * {
-                            font-size: 14px;
+                            font-size: 0.95rem;
                             margin: 0px;
                         }
                     }
@@ -56,12 +66,14 @@
         }
     }
 }
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(lg) { 
     .block-topic {
         margin-bottom: 30px;
         article {
+            text-align: left;
             figure {
                 margin: 0px;
+                align-items: center;
                 > a {
                     display: block;
                     margin-bottom: 15px;
@@ -70,12 +82,13 @@
                 figcaption {
                     a {
                         * {
-                            font-size: 18px;
+                            font-size: 1rem;
                             margin: 0px;
                         }
                     }
                     p {
-                        font-size: 16px;
+                        color: $gray-600;
+                        font-size: 0.9rem;
                         margin: 0px;
                     }
                 }

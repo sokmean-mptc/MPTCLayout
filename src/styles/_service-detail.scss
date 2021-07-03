@@ -15,20 +15,20 @@ html[lang=km] {
             border: initial;
             background: initial;
             border-bottom: 1px solid $gray-200;
-            color: $primary;
+            color: $gray-800;
             font-size: 16px;
             padding: 15px 15px 15px 30px;
             border-radius: 0px;
         }
         .list-group-item.active {
             background-color: #ffffff;
-            border-left: 5px solid $primary;
+            border-left: 5px solid var(--bs-primary);
             padding-left: 25px;
             border-bottom: initial;
         }
         .list-group-item.head {
             font-weight: bold;
-            color: $primary;
+            color: $gray-800;
         }
     }
     .list-group.sticky {
@@ -39,13 +39,13 @@ html[lang=km] {
         font-size: 16px;
         .list-title {
             > * {
-                color: $primary;
+                color: $gray-800;
                 font-weight: bold;
             }
         }
         .list-title.sub {
             > * {
-                color: $primary;
+                color: $gray-800;
             }
         }
         ul, ol, dl {
