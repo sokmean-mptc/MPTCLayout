@@ -33,6 +33,7 @@
             .collapse,
             .collapsing {
                 .collapse-body {
+                    padding-top: 30px;
                 }
                 
             }
@@ -40,11 +41,15 @@
     }
     .block-list {
         article {
+            margin-bottom: 13px;
             .title {
                 font-size: 0.9rem;
                 * {
                     color: $gray-800;
                     text-decoration: none;
+                }
+                &:hover {
+                    text-decoration: underline;
                 }
             }
             .excerpt { 
@@ -58,7 +63,7 @@
 @include media-breakpoint-up(sm) { 
     
 }
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
     .tab-collapse {
         .nav {
             display: block;
@@ -89,11 +94,19 @@
         margin-bottom: 30px;
         .tab-content {
             .tab-pane {
+                border: none;
                 &.fade {
                     display: none;
                 }
                 &.active {
                     display: block;
+                }
+                .collapse,
+                .collapsing {
+                    .collapse-body {
+                        padding-top: 0;
+                    }
+                    
                 }
             }
             .collapse-title {
