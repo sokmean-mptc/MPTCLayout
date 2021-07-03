@@ -146,10 +146,12 @@ nav {
 }
 }
 @include media-breakpoint-up(xl) {
-    .menu {
-        > .menu-item {
-            > a {
-                margin-right: 3rem;
+    nav {
+        .menu {
+            > .menu-item {
+                > a {
+                    margin-right: 3rem;
+                }
             }
         }
     }
