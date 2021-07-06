@@ -1,0 +1,39 @@
+.grid-style {
+    font-size: 0.8rem;
+    
+    div {
+        p {
+            padding: 0.8em;
+            margin: 0px;
+            font-size: 1em;
+        }
+        &:nth-child(even) {
+            background-color: $gray-200;
+            border-bottom: 1px solid $gray-100;
+        }
+        &:nth-child(odd) {
+            background-color: $gray-100;
+            border-bottom: 1px solid $gray-200;
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .grid-style {
+        font-size: 0.8rem;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .grid-style {
+        font-size: 0.9rem;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .grid-style {
+        font-size: 1rem;
+    }
+}
