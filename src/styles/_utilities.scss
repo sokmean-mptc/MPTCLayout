@@ -42,4 +42,4 @@ $utilities: (
 );
 
 // $gradient: linear-gradient(45deg, rgba($primary, .7), rgba($primary, .9));
-$gradient: linear-gradient(45deg, rgba($primary, .8), $primary);
+$gradient: linear-gradient(45deg, $secondary, $primary);

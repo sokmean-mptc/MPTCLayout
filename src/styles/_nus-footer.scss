@@ -1,0 +1,143 @@
+:root {
+    --highlight: #ff9800;
+}
+.nus-footer {
+    font-size: 1rem;
+    .nus-info-wraper {
+        padding: 40px 10px;
+        .nus-contact-info {
+            .title {
+                font-size: 1.125em;
+                line-height: 1.6;
+                color: $white;
+            }
+            .nus-contact-us {
+                list-style: none;
+                margin: 0px auto;
+                padding: 0px;
+                text-align: left;
+                line-height: 1.6;
+                li {
+                    font-size: 0.85em;
+                    i {
+                        margin-right: 20px;
+                    }
+                    span {
+                        color: $gray-500;
+                    }
+                }
+            }
+        }
+        .nus-social-nav {
+            margin-top: 40px;
+            nav {
+                ul {
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+                    display: flex;
+                    li {
+                        margin-right: 15px;
+                        a {
+                            color: $white;
+                            text-decoration: none;
+                            i {
+                                font-size: 1.5em;
+                            }
+                            &:hover {
+                                color: var(--highlight);
+                            }
+                        }
+                        &li:last-child {
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nus-copyright {
+        padding: 40px 10px;
+        border-top: 1px solid rgba($secondary,.3);
+        .info {
+            font-size: 0.75em;
+            color: $gray-500;
+            line-height: 1.6;
+            margin-bottom: 5px;
+        }
+        .nus-nav {
+            font-size: 1rem;
+            ul {
+                display: flex;
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                line-height: initial;
+                li {
+                    &::after {
+                        content: '\2022';
+                        padding-right: 5px;
+                        padding-left: 5px;
+                    }
+                    display: flex;
+                    color: $gray-500;
+                    a {
+                        color: $gray-500;
+                        font-size: 0.75em;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .nus-language {
+            ul {
+                display: flex;
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                li {
+                    margin-right: 5px;
+                    a {
+                        color: $gray-500;
+                        font-size: 0.75em;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    &:last-child {
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {
+    .nus-footer {
+        .nus-info-wraper {
+            padding: 120px 10px;
+        }
+        .nus-copyright {
+            .nus-nav {
+                ul {
+                    
+                    li {
+                        &::after {
+                            padding-right: 15px;
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    
+}

@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         disableAt: 992,
         customToggle: '.toggle-nav',
         insertClose: false,
-        insertBack: false
+        insertBack: false,
+        position: 'right'
     })
 })

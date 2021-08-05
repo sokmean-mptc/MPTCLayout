@@ -58,6 +58,14 @@ header {
             }
         }
     }
+    & > figure {
+        a { 
+            z-index: 1; 
+        }
+    }
+    & > div {
+        z-index: 1;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)

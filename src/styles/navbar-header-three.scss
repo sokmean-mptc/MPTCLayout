@@ -1,0 +1,59 @@
+.header-three {
+    .mobile-toggle {
+        .toggle-nav {
+            ul {
+                li {
+                    width: 25px;
+                    height: 3px;
+                    margin-bottom: 5px;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+    nav {
+        .menu {
+            > .menu-item {
+                &.menu-item-has-children {
+                    &:hover {
+                        > a {
+                            border-color: var(--highlight);
+                        }
+                    }
+                }
+                > a {
+                    &:hover {
+                        border-color: var(--highlight);
+                    }
+                }
+                
+                &.current-menu-ancestor,
+                &.current-menu-item {
+                    > a {
+                        border-color: var(--highlight);
+                    }
+                }
+            }
+        }
+
+        .sub-menu {
+            .menu-item {
+                &.current-menu-ancestor,
+                &.current-menu-item,
+                &:hover {
+                    > a {
+                        font-weight: normal;
+                        color: var(--highlight);
+                    }
+                }
+                a {
+                    color: $primary;
+                }
+            }
+        }
+
+    }
+}
