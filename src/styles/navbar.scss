@@ -49,6 +49,7 @@ nav {
 
 
     .menu {
+        z-index: 1;
         display: flex;
         > .menu-item {
             &.menu-item-has-children {
