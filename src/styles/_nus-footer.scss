@@ -48,7 +48,7 @@
                                 color: var(--highlight);
                             }
                         }
-                        &li:last-child {
+                        &:last-child {
                             margin: 0px;
                         }
                     }
