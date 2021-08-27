@@ -1,5 +1,5 @@
 import hcOffcanvasNav from 'hc-offcanvas-nav'
-
+if ( document.getElementById("main-nav") )
 document.addEventListener('DOMContentLoaded', function() {
     new hcOffcanvasNav('#main-nav', {
         disableAt: 992,
