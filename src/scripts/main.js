@@ -1,3 +1,4 @@
+import 'jquery/src/jquery'
 import './hc-offcanvas-nav'
 import './slick'
 import 'bootstrap'

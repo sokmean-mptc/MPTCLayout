@@ -1,4 +1,3 @@
-import $ from 'jquery'
 var query = document.querySelector('#menu-tab');
 if(query) {
     var element = window.scrollY + query.getBoundingClientRect().top;
