@@ -1,3 +1,4 @@
+import $ from 'jquery'
 import videojs from 'video.js'
 import playlist from 'videojs-playlist'
 import 'videojs-playlist-ui'
