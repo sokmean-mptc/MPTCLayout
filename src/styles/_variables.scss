@@ -1,12 +1,12 @@
-// $font-body: "Open Sans", Helvetica, "Koh-Santepheap", sans-serif;
-$font-body: "Open Sans", Helvetica, "Kantumruy", sans-serif;
+$font-body: "Open Sans", Helvetica, "Koh-Santepheap", sans-serif;
+// $font-body: "Open Sans", Helvetica, "Kantumruy", sans-serif;
 $font-family-sans-serif: $font-body;
 
 // $primary:       #003D7C;
 $primary:       #003a8a;
 $secondary:     #3da3cf;
 // $secondary:     #ff6600;
-
+$headings-line-height: var(--bs-body-line-height);
 $white:    #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -22,12 +22,12 @@ $black:    #000;
 $hc-offcanvas-nav-background-color:   $gray-200 !default;
 $hc-offcanvas-nav-text-color:         $gray-900 !default;
 
-$container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px
-);
+// $container-max-widths: (
+//     sm: 540px,
+//     md: 720px,
+//     lg: 960px,
+//     xl: 1140px
+// );
 
 $aspect-ratios: (
     "1x1": 100%,
@@ -35,5 +35,7 @@ $aspect-ratios: (
     "3x4": calc(4 / 3 * 100%),
     "4x3": calc(3 / 4 * 100%),
     "16x9": calc(9 / 16 * 100%),
-    "21x9": calc(9 / 21 * 100%)
+    "21x9": calc(9 / 21 * 100%),
+    "anamorphic": calc(1 / 2.39 * 100%),
+    "panavision": calc(1 / 2.75 * 100%)
 );

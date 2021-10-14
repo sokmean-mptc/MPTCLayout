@@ -11,7 +11,7 @@ figure {
             outline: none;
             color: $gray-900;
             text-decoration: none;
-            line-height: 1.35;
+            line-height: var(--bs-body-line-height);
             &:hover {
                 text-decoration: underline;
             }

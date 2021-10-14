@@ -1,0 +1,101 @@
+
+.header-cpp {
+    header {
+        height: 60px;
+        background-position: top;
+        background-size: cover;
+    }
+    background-image: var(--bs-gradient);
+    
+    .social {
+        ul {
+            li {
+                a {
+                    color: $gray-100;
+                    &:hover {
+                        color: var(--highlight);
+                    }
+                }
+            }
+        }
+    }
+    .search-icon {
+        i {
+            cursor: pointer;
+            &:hover {
+                color: var(--highlight);
+            }
+        }
+    }
+    .language {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        li {
+            margin-right: 0.5rem;
+            padding-right: 0.5rem;
+            border-right: 2px solid;
+            line-height: 1;
+            a {
+                color: inherit;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                    color: var(--highlight);
+                }
+            }
+            &:last-child {
+                border-right: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            &.active {
+                color: var(--highlight);
+            }
+        }
+    }
+    .mobile-toggle {
+        .toggle-nav {
+            ul {
+                li {
+                    width: 25px;
+                    height: 3px;
+                    margin-bottom: 6px;
+                    border-radius: 0px;
+                    &:last-child {
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {  
+    .header-cpp {
+        header {
+            height: 60px;
+        }
+    }
+}
+@include media-breakpoint-up(md) {  
+    .header-cpp {
+        header {
+            height: 80px;
+        }
+    }
+}
+@include media-breakpoint-up(lg) { 
+    .header-cpp {
+        header {
+            height: 380px;
+        }
+    }
+}
+@include media-breakpoint-up(xl) { 
+    .header-cpp {
+        header {
+            height: 380px;
+        }   
+    }
+}

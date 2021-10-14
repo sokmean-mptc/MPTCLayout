@@ -1,3 +1,6 @@
+:root {
+  --highlight: #F07D03;
+}
 $utilities: (
   "text": (
     property: color,
@@ -43,3 +46,7 @@ $utilities: (
 
 // $gradient: linear-gradient(45deg, rgba($primary, .7), rgba($primary, .9));
 $gradient: linear-gradient(45deg, $secondary, $primary);
+
+.container-fluid {
+      max-width: 1440px;
+  }
